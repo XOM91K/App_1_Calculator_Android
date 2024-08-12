@@ -1,6 +1,9 @@
 package com.example.app_1_calculator_android;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +23,9 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        EditText editTextAnswer = findViewById(R.id.editTextNumber);
+        Button buttonAnswer = findViewById(R.id.button);
+        TextView correctText = findViewById(R.id.CorrectAnswer);
+        TextView incorrectText = findViewById(R.id.IncorrectAnswer);
     }
 }
