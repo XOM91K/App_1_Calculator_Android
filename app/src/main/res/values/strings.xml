@@ -2,4 +2,6 @@
     <string name="app_name">App_1_Calculator_Android</string>
     <string name="example">10+5=?</string>
     <string name="AnswerButton">Ответ</string>
+    <string name="IncorrectTextAnswer">Извините, ваш ответ неверный</string>
+    <string name="HintInput">Введите ответ</string>
 </resources>
