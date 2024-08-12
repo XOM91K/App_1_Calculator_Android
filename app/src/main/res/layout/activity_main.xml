@@ -12,14 +12,15 @@
         android:id="@+id/textViewExample"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="@string/example"
         android:textColor="#673AB7"
         android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="48dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextNumber"
@@ -46,17 +47,39 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="356dp"
-        android:layout_height="223dp"
+        android:id="@+id/IncorrectAnswer"
+        android:layout_width="379dp"
+        android:layout_height="358dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:background="#FF0000"
+        android:padding="50dp"
         android:text="@string/IncorrectTextAnswer"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/ffffff"
         android:textColorHighlight="#00E2FF"
         android:textSize="48sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/CorrectAnswer"
+        android:layout_width="379dp"
+        android:layout_height="358dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/holo_green_dark"
+        android:padding="50dp"
+        android:text="@string/CorrectTextAnswer"
+        android:textAlignment="center"
+        android:textColor="@color/ffffff"
+        android:textColorHighlight="#00E2FF"
+        android:textSize="48sp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
