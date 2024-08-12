@@ -1,6 +1,7 @@
 package com.example.app_1_calculator_android;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -27,5 +28,19 @@ public class MainActivity extends AppCompatActivity {
         Button buttonAnswer = findViewById(R.id.button);
         TextView correctText = findViewById(R.id.CorrectAnswer);
         TextView incorrectText = findViewById(R.id.IncorrectAnswer);
+
+        buttonAnswer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String text = editTextAnswer.getText().toString();
+                if (text.equals("15")) {
+                    correctText.setVisibility(View.VISIBLE);
+                    incorrectText.setVisibility(View.INVISIBLE);
+                } else {
+                    incorrectText.setVisibility(View.VISIBLE);
+                    correctText.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
     }
 }
