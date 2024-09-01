@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     incorrectText.setVisibility(View.VISIBLE);
                     correctText.setVisibility(View.INVISIBLE);
+                    //
                 }
             }
         });
